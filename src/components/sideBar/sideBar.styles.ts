@@ -45,6 +45,8 @@ export const Route = styled(Button)`
   display: flex;
   color: ${theme.colors.white};
   gap: 8px;
+  justify-content: start;
+  padding: 0px 8px;
 
   &:hover {
     background-color: ${theme.colors.gray[900]};
