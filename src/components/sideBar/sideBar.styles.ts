@@ -26,9 +26,8 @@ export const SideBarHeader = styled.div`
 `;
 
 export const SideBarContent = styled.div`
-  height: calc(100% - 60px);
+  height: calc(100% - 136px);
   width: 100%;
-  padding: 10px;
 
   display: flex;
   flex-direction: column;
@@ -38,6 +37,16 @@ export const SideBarContent = styled.div`
   &::-webkit-scrollbar {
     width: 0;
   }
+`;
+
+export const SideBarFooter = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 16px;
+
+  height: 76px;
+  width: 100%;
 `;
 
 export const Route = styled(Button)`

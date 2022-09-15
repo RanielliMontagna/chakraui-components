@@ -2,8 +2,8 @@ import { useNavigate } from 'react-router-dom';
 import { AiOutlineDashboard, AiOutlineFileText, AiOutlineRead } from 'react-icons/ai';
 import { MdOutlineFeedback } from 'react-icons/md';
 
-import { Icon, Text, theme } from '@chakra-ui/react';
-import { Route, SideBarContainer, SideBarContent, SideBarHeader } from './sideBar.styles';
+import { Avatar, Icon, Text, theme } from '@chakra-ui/react';
+import { Route, SideBarContainer, SideBarContent, SideBarFooter, SideBarHeader } from './sideBar.styles';
 
 const SideBar = () => {
   const _navigate = useNavigate();
@@ -29,6 +29,12 @@ const SideBar = () => {
           <Text color={theme.colors.white}>Fields</Text>
         </Route>
       </SideBarContent>
+      <SideBarFooter>
+        <Avatar name="Ranielli" />
+        <Text color={theme.colors.white} fontSize="lg" fontWeight="thin">
+          Ranielli
+        </Text>
+      </SideBarFooter>
     </SideBarContainer>
   );
 };
