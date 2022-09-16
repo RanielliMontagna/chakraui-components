@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { AiOutlineDashboard, AiOutlineFileText, AiOutlineRead } from 'react-icons/ai';
+import { AiOutlineDashboard, AiOutlineFileText, AiOutlineRead, AiOutlineTable } from 'react-icons/ai';
 import { MdOutlineFeedback } from 'react-icons/md';
 
 import { Avatar, Icon, Text, theme } from '@chakra-ui/react';
@@ -27,6 +27,10 @@ const SideBar = () => {
         <Route variant="unstyled" width="full" onClick={() => _navigate('/fields')}>
           <Icon as={AiOutlineFileText} w={6} h={6} />
           <Text color={theme.colors.white}>Fields</Text>
+        </Route>
+        <Route variant="unstyled" width="full" onClick={() => _navigate('/dataTable')}>
+          <Icon as={AiOutlineTable} w={6} h={6} />
+          <Text color={theme.colors.white}>DataTable</Text>
         </Route>
       </SideBarContent>
       <SideBarFooter>
